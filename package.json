@@ -9,7 +9,8 @@
     "preview": "astro preview"
   },
   "devDependencies": {
+    "@astrojs/renderer-svelte": "^0.1.2",
     "astro": "^0.20.7",
-    "@astrojs/renderer-svelte": "^0.1.2"
+    "tailwindcss": "^2.2.15"
   }
 }
