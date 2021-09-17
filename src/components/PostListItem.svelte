@@ -15,7 +15,7 @@
     <div>{DateTime.fromISO(releaseDate).toISODate()}</div>
     <div class="flex flex-wrap justify-start">
       {#each tags as tag}
-        <a class="ml-4 italic text-gray-600" href={`/tag/${tag}`}>
+        <a class="ml-4 italic text-gray-600" href={`/tags/${tag}`}>
           #{tag}
         </a>
       {/each}

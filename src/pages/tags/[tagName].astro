@@ -1,0 +1,22 @@
+---
+  import BaseLayout from '../../layouts/BaseLayout.astro'
+  import PostListItem from '../../components/PostListItem.svelte'
+export async function getStaticPaths() {
+    const tags = new Set()
+    const posts = Astro.fetchContent('../blog/*.md')
+    
+    posts.forEach(p => p.tags.forEach(t => tags.add(t)))
+    return Array.from(tags).map(t => ({params: {tagName: t}, props: {posts: posts.filter(p => p.tags.includes(t))}}))
+  ;
+}
+
+const {tagName} = Astro.request.params
+const {posts} = Astro.props
+---
+
+<BaseLayout>
+<h1 class="capitalize text-2xl">Tag: {tagName}</h1>
+{posts.map(p => 
+        <PostListItem title={p.title} url={p.url} releaseDate={p.releaseDate} tags={p.tags} content={p.astro.html} />
+)}
+</BaseLayout>

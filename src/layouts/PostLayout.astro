@@ -9,7 +9,7 @@ const {content: {releaseDate, tags, title}} = Astro.props
       <div class="mb-4 text-sm text-center text-gray-600 dark:text-gray-400">
         {DateTime.fromISO(releaseDate).toISODate()}
         <div class="flex flex-wrap justify-center">
-          {tags?.map((tag) => <a class="mx-2 font-bold" href={`/tag/${tag}`} key={tag}>#{tag}</a>)}
+          {tags?.map((tag) => <a class="mx-2 font-bold" href={`/tags/${tag}`} key={tag}>#{tag}</a>)}
         </div>
       </div>
         <slot />
