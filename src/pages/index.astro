@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 import PostListItem from '../components/PostListItem.svelte'
 const posts = Astro.fetchContent('./blog/*.md')
 ---
-<BaseLayout>
+<BaseLayout title="Bün Colak Blog">
 {posts
     .sort((p1,p2) =>  (new Date(p2.releaseDate)).getTime()- (new Date(p1.releaseDate)).getTime())
     .map(p => 

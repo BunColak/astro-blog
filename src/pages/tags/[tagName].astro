@@ -14,7 +14,7 @@ const {tagName} = Astro.request.params
 const {posts} = Astro.props
 ---
 
-<BaseLayout>
+<BaseLayout title={tagName}>
 <h1 class="capitalize text-2xl">Tag: {tagName}</h1>
 {posts.map(p => 
         <PostListItem title={p.title} url={p.url} releaseDate={p.releaseDate} tags={p.tags} content={p.astro.html} />
