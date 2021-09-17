@@ -28,14 +28,9 @@ const derivedDescription = description || "Personal website for Bün Colak. Deve
     >
 </head>
 <body>
-<div class="relative min-h-screen transition-all dark:bg-gray-800 dark:text-white">
-      <div class="container pb-20 mx-auto">
-        <div class="mx-4 md:mx-auto md:w-2/3">
-        <Header />
-          <slot />
-        </div>
-      </div>
-    </div>
+<div class="relative min-h-screen transition-all dark:text-white">
+    <slot />
+</div>
 </body>
 </html>
 

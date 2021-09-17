@@ -1,0 +1,15 @@
+---
+import Header from '../components/Header.svelte'
+import BaseLayout from './BaseLayout.astro'
+
+const {title, description} = Astro.props
+---
+  <BaseLayout>
+      <div class="container pb-20 mx-auto">
+        <div class="mx-4 md:mx-auto md:w-2/3">
+          <Header />
+          <slot />
+        </div>
+    </div>
+  </BaseLayout>
+

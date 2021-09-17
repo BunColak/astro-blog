@@ -1,5 +1,5 @@
 ---
-  import BaseLayout from '../../layouts/BaseLayout.astro'
+  import BaseBlogLayout from '../../layouts/BaseBlogLayout.astro'
   import PostListItem from '../../components/PostListItem.svelte'
 export async function getStaticPaths() {
     const tags = new Set()
@@ -14,9 +14,9 @@ const {tagName} = Astro.request.params
 const {posts} = Astro.props
 ---
 
-<BaseLayout title={tagName}>
-<h1 class="capitalize text-2xl">Tag: {tagName}</h1>
+<BaseBlogLayout title={tagName}>
+<h1 class="text-2xl capitalize">Tag: {tagName}</h1>
 {posts.map(p => 
         <PostListItem title={p.title} url={p.url} releaseDate={p.releaseDate} tags={p.tags} content={p.astro.html} />
 )}
-</BaseLayout>
+</BaseBlogLayout>
