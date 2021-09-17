@@ -1,0 +1,14 @@
+---
+import BaseLayout from './BaseLayout.astro'
+const {content: {releaseDate, tags, title}} = Astro.props
+---
+<BaseLayout>
+<h1 class="mb-2 text-center">{title}</h1>
+      <div class="mb-4 text-sm text-center text-gray-600 dark:text-gray-400">
+        {releaseDate}
+        <div class="flex flex-wrap justify-center">
+          {tags?.map((tag) => <a class="mx-2 font-bold" href={`/tag/${tag}`} key={tag}>#{tag}</a>)}
+        </div>
+      </div>
+      <slot />
+</BaseLayout>

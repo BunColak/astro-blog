@@ -1,3 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Source+Sans+Pro:700&display=swap");
+
 @tailwind base;
+
+.markdown-body {
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 45px 0;
+}
+
+@media (max-width: 767px) {
+  .markdown-body {
+    padding: 15px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply mt-6 mb-3 leading-normal tracking-wide text-indigo-700;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+}
+
+body {
+  @apply leading-7 tracking-wide;
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  @apply my-4;
+}
+
+pre {
+  @apply my-4 !important;
+}
+
+pre > code {
+  background-color: inherit;
+  color: inherit;
+  @apply p-0 font-normal border-0;
+}
+
+code {
+  @apply px-2 font-bold text-indigo-600 bg-gray-200 border;
+}
+
+a {
+  font-family: "Source Sans Pro", sans-serif;
+  @apply font-bold text-indigo-600 no-underline border-0 border-b-2 border-indigo-600 border-solid;
+}
+
+a:hover {
+  @apply text-indigo-800;
+}
+
+table {
+  @apply w-2/3 table-auto;
+  border-spacing: 0;
+}
+
+thead {
+  @apply bg-gray-100;
+}
+
+th,
+td {
+  @apply px-2 py-2 text-left border border-gray-200 border-solid;
+}
+
 @tailwind components;
+
 @tailwind utilities;

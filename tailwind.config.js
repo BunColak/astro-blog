@@ -1,6 +1,11 @@
 module.exports = {
     mode: 'jit',
     purge: ['./public/**/*.html', './src/**/*.{astro,js,jsx,svelte,ts,tsx,vue}'],
-    // more options here
+    theme: {
+      fontFamily: {
+        display: ['Open Sans', 'sans-serif'],
+        body: ['Source Sans Pro', 'sans-serif'],
+      },
+    },
   };
   
