@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/PostLayout.astro
+layout: ../../layouts/PostLayout.astro
 tags: ["test", "test2"]
 title: Test title
 releaseDate: 2020-01-01

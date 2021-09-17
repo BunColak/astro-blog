@@ -1,21 +1,8 @@
 ---
-let title = 'Bun Colak';
+import BaseLayout from '../layouts/BaseLayout.astro'
+import PostListItem from '../components/PostListItem.svelte'
+const posts = Astro.fetchContent('./blog/*.md')
 ---
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>{title}</title>
-
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link
-        rel="stylesheet"
-        href={Astro.resolve("../styles/global.css")}
-    >
-</head>
-<body>
-    <div class="text-red-300">
-        Hello There
-    </div>
-</body>
-</html>
+<BaseLayout>
+{posts.map(p => <PostListItem title={p.title} url={p.url} releaseDate={p.releaseDate} tags={p.tags} content={p.astro.html} />)}
+</BaseLayout>
