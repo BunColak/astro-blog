@@ -1,4 +1,4 @@
-<div>
+<div class="container mx-auto">
   <h2 class="my-4 text-5xl font-bold lg:text-center">My work</h2>
   <div class="grid gap-16 px-4 mt-16 lg:grid-cols-2">
     <div>
