@@ -7,5 +7,8 @@ module.exports = {
         body: ['Source Sans Pro', 'sans-serif'],
       },
     },
+    plugins: [
+      require('@tailwindcss/typography'),
+    ]
   };
   

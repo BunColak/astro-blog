@@ -22,7 +22,7 @@ h3,
 h4,
 h5,
 h6 {
-  @apply mt-6 mb-3 leading-normal tracking-wide text-indigo-700;
+  @apply mt-6 mb-3 leading-normal tracking-wide text-indigo-700 !important;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
 }
@@ -52,7 +52,7 @@ code {
 
 a {
   font-family: "Source Sans Pro", sans-serif;
-  @apply font-bold text-indigo-600 no-underline border-0 border-b-2 border-indigo-600 border-solid;
+  @apply font-bold text-indigo-600 no-underline border-0 border-b-2 border-indigo-600 border-solid !important;
 }
 
 a:hover {
@@ -153,3 +153,4 @@ pre[class*='language-'] {
 .namespace {
   opacity: 0.7;
 }
+

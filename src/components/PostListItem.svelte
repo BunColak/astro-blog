@@ -21,7 +21,7 @@
       {/each}
     </div>
   </div>
-  <div class="mt-1 text-sm leading-snug text-gray-900">
+  <div class="mt-1 text-sm leading-snug text-gray-900 prose max-w-none">
     {@html excerpt}
   </div>
 </div>
