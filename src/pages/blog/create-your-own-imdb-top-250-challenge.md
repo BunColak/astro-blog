@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/PostLayout.astro
-tags: ["test", "test2"]
-title: Test title
-releaseDate: 2020-01-01
+tags: ["typescript","react","graphql","automation"]
+title: Create your own IMDB Top 250 challenge
+releaseDate: 2020-12-28
 ---
 I swear this pandemic will never end. Thus, I wanted to watch every movie I haven't watched from IMDB Top 250 list. Naturally, instead of watching the movies I wanted to write an application to automate my progress. I wasn't going to track my progress on a spreadsheet like a peasant.
 

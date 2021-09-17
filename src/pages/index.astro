@@ -4,5 +4,9 @@ import PostListItem from '../components/PostListItem.svelte'
 const posts = Astro.fetchContent('./blog/*.md')
 ---
 <BaseLayout>
-{posts.map(p => <PostListItem title={p.title} url={p.url} releaseDate={p.releaseDate} tags={p.tags} content={p.astro.html} />)}
+{posts
+    .sort((p1,p2) =>  (new Date(p2.releaseDate)).getTime()- (new Date(p1.releaseDate)).getTime())
+    .map(p => 
+        <PostListItem title={p.title} url={p.url} releaseDate={p.releaseDate} tags={p.tags} content={p.astro.html} />
+    )}
 </BaseLayout>
