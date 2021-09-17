@@ -17,7 +17,25 @@ module.exports = {
                   textDecoration: 'none',
                   color: theme('colors.indigo.700'),
                 }
-              }
+              },
+              h1: {
+                color: theme('colors.indigo.600'),
+              },
+              h2: {
+                color: theme('colors.indigo.600'),
+              },
+              h3: {
+                color: theme('colors.indigo.600'),
+              },
+              h4: {
+                color: theme('colors.indigo.600'),
+              },
+              h5: {
+                color: theme('colors.indigo.600'),
+              },
+              h6: {
+                color: theme('colors.indigo.600'),
+              },
             }
           }
         })
@@ -25,6 +43,7 @@ module.exports = {
     },
     plugins: [
       require('@tailwindcss/typography'),
+      require('daisyui'),
     ]
   };
   
