@@ -11,12 +11,12 @@
   <div class="relative h-24 overflow-hidden">
     <div class="absolute top-0 left-0 flex h-24 items w-[300%]">
       {#each sortedPosts as post}
-        <div class="w-[10%]">
+        <div class="w-full text-center lg:w-[10%]">
           <a class="text-lg" href={post.url}>{post.title}</a>
         </div>
       {/each}
       {#each sortedPosts as post}
-        <div class="w-[10%]">
+        <div class="w-full text-center lg:w-[10%]">
           <a class="text-lg" href={post.url}>{post.title}</a>
         </div>
       {/each}
@@ -26,15 +26,21 @@
 
 <style>
   .items {
-     animation: slideshow 30s linear infinite
+    animation: slideshow 20s linear infinite;
+  }
+
+  @media screen and (max-width: 768px) {
+    .items {
+      animation: slideshow 10s linear infinite;
+    }
   }
 
   @keyframes slideshow {
     0% {
-      left: 0;
+      transform: translateX(0);
     }
     100% {
-      left: -90%;
+      transform: translateX(-30%);
     }
   }
 </style>
