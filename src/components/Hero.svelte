@@ -3,8 +3,19 @@
     <div class="mr-0 lg:mr-16">
       <h1>Bünyamin Colak</h1>
       <p>Fullstack developer, curious person.</p>
-      <button class="bg-indigo-600 rounded btn">Contact Me</button>
+      <a href="#contact" class="text-white bg-indigo-600 rounded btn">Contact Me</a>
     </div>
     <img class="shadow-lg rounded-xl shadow-indigo-600" alt="Profile" src="/assets/profile.jpg" />
   </div>
 </div>
+
+
+<style>
+  a {
+    color: white;
+  }
+
+  a:hover {
+    color: white;
+  }
+</style>

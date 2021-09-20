@@ -1,4 +1,4 @@
-<div class="py-16 mt-16 bg-indigo-600">
+<div id="contact" class="py-16 mt-16 bg-indigo-600">
   <div class="p-4 pb-6 mx-4 bg-white shadow-xl lg:mx-auto lg:w-1/3 rounded-xl">
     <h2 class="text-5xl font-bold text-center">Contact Me</h2>
     <form action="https://submit-form.com/EN0MrMqI" method="POST" class="mt-8">
