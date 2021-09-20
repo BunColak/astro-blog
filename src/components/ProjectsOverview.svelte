@@ -1,5 +1,6 @@
 <div class="container mx-auto">
   <h2 id="projects" class="my-4 mt-16 text-5xl font-bold lg:text-center">My work</h2>
+  <p class="mt-2 text-xl text-center">Some of the stuff that I do in my freetime</p>
   <div class="grid gap-16 px-4 mt-16 lg:grid-cols-2">
     <div>
       <figure>
