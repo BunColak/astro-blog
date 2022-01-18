@@ -3,7 +3,7 @@
     <div class="mr-0 lg:mr-16">
       <h1>Bünyamin Colak</h1>
       <p>Fullstack developer, curious person.</p>
-      <a href="#contact" class="text-white bg-indigo-600 rounded btn">Contact Me</a>
+      <a href="#contact" class="text-white bg-indigo-600 rounded btn border-0">Contact Me</a>
     </div>
     <img class="shadow-lg rounded-xl shadow-indigo-600" alt="Profile" src="/assets/profile.jpg" />
   </div>

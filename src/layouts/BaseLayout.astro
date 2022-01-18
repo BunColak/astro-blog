@@ -2,7 +2,7 @@
 const {title, description} = Astro.props
 const derivedDescription = description || "Personal website for Bün Colak. Development tips and personal opinions."
 ---
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
@@ -26,7 +26,7 @@ const derivedDescription = description || "Personal website for Bün Colak. Deve
     >
 </head>
 <body>
-<div class="relative min-h-screen transition-all dark:text-white">
+<div class="relative min-h-screen transition-all dark:text-white dark:bg-gray-400">
     <slot />
 </div>
 </body>
