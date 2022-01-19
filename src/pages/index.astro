@@ -2,9 +2,6 @@
 import BaseLayout from '../layouts/BaseLayout.astro'
 import Header from '../components/Header.svelte'
 import Hero from '../components/Hero.svelte'
-import ProjectsOverview from '../components/ProjectsOverview.svelte'
-import ContactForm from '../components/ContactForm.svelte'
-import LatestPosts from '../components/LatestPosts.svelte'
 import Footer from '../components/Footer.svelte'
 
 const posts = Astro.fetchContent('./blog/*.md')
@@ -14,9 +11,6 @@ const posts = Astro.fetchContent('./blog/*.md')
 <div class="mx-auto">
    <Header />
    <Hero />
-   <LatestPosts posts={posts}/>
-   <ProjectsOverview />
-   <ContactForm />
    <Footer />
 </div>
 </BaseLayout>
