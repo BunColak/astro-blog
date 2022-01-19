@@ -5,12 +5,6 @@
             <li class="mx-2">
                 <a class="border-0" href="/blog">Blog</a>
             </li>
-            <li class="hidden mx-2 lg:block">
-                <a class="border-0" href="#projects">Projects</a>
-            </li>
-            <li class="mx-2">
-                <a class="border-0" href="#contact">Contact</a>
-            </li>
         </ul>
     </div>
 </nav>
