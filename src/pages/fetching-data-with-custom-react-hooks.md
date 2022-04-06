@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PostLayout.astro
+layout: ../layouts/PostLayout.astro
 tags: ["hooks","typescript","react"]
 title: Fetching Data With Custom React Hooks
 releaseDate: 2020-03-20

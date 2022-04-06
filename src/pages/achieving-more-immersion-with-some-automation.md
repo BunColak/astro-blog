@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PostLayout.astro
+layout: ../layouts/PostLayout.astro
 tags: ["python","automation"]
 title: Achieving more immersion with some automation
 releaseDate: 2020-10-30

@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PostLayout.astro
+layout: ../layouts/PostLayout.astro
 tags: ["typeorm","typescript","backend", "graphql",]
 title: GraphQL API with Typescript / TypeORM + TypeGraphQL
 releaseDate: 2020-03-01

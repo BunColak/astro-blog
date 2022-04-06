@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PostLayout.astro
+layout: ../layouts/PostLayout.astro
 tags: ["sanity","graphql","cms"]
 title: Hey, it's Jamstack time
 releaseDate: 2020-10-25

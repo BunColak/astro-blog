@@ -1,16 +1,12 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro'
-import Header from '../components/Header.svelte'
-import Hero from '../components/Hero.svelte'
-import Footer from '../components/Footer.svelte'
-
-const posts = Astro.fetchContent('./blog/*.md')
+import BaseBlogLayout from '../layouts/BaseBlogLayout.astro'
+import PostListItem from '../components/PostListItem.svelte'
+const posts = Astro.fetchContent('./*.md')
 ---
-
-<BaseLayout>
-<div class="mx-auto">
-   <Header />
-   <Hero />
-   <Footer />
-</div>
-</BaseLayout>
+<BaseBlogLayout title="Bün Colak Blog">
+{posts
+    .sort((p1,p2) =>  (new Date(p2.releaseDate)).getTime()- (new Date(p1.releaseDate)).getTime())
+    .map(p => 
+        <PostListItem title={p.title} url={p.url} releaseDate={p.releaseDate} tags={p.tags} content={p.astro.html} />
+    )}
+</BaseBlogLayout>

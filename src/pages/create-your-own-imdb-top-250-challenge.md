@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PostLayout.astro
+layout: ../layouts/PostLayout.astro
 tags: ["typescript","react","graphql","automation"]
 title: Create your own IMDB Top 250 challenge
 releaseDate: 2020-12-28
