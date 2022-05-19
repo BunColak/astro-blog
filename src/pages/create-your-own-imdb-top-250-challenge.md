@@ -2,6 +2,7 @@
 layout: ../layouts/PostLayout.astro
 tags: ["typescript","react","graphql","automation"]
 title: Create your own IMDB Top 250 challenge
+description: I swear this pandemic will never end. Thus, I wanted to watch every movie I haven't watched from IMDB Top 250 list...
 releaseDate: 2020-12-28
 ---
 I swear this pandemic will never end. Thus, I wanted to watch every movie I haven't watched from IMDB Top 250 list. Naturally, instead of watching the movies I wanted to write an application to automate my progress. I wasn't going to track my progress on a spreadsheet like a peasant.
@@ -22,7 +23,7 @@ UserList is just an ID for each list and a many-to-many relation to movies, whic
 
 So here's our final models:
 
-```
+```prisma
 model UserList {
   id String @id @default(cuid())
   finishedMovies Movie[] @relation(references: [id])

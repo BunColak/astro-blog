@@ -2,6 +2,7 @@
 layout: ../layouts/PostLayout.astro
 tags: ["hooks","typescript","react"]
 title: Fetching Data With Custom React Hooks
+description: So there I was, bored during 'Great Covid Social Distancing', I have come across a Wes Bos's video about fetching data with React Hooks...
 releaseDate: 2020-03-20
 ---
 So there I was, bored during 'Great Covid Social Distancing', I have come across [Wes Bos's video](https://www.youtube.com/watch?v=B85s0cjlitE) about fetching data with React Hooks. It was something that I had kept seeing but never put into action too much. So naturally, I had tried it with Typescript. Which was successful, but I was not happy with it. There was no type safety of it. No route definitions, no response schemes. I knew that if I was to use it on a larger scale application, type safety would be great help both documentation and prevent random usages within the team.

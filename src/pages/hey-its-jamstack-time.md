@@ -2,6 +2,7 @@
 layout: ../layouts/PostLayout.astro
 tags: ["sanity","graphql","cms"]
 title: Hey, it's Jamstack time
+description: I made this blog with Gatsby on February (Edit 2021, not anymore). I though 2020 would be a good year, I would write more and have a healthier life...
 releaseDate: 2020-10-25
 ---
 I made this blog with Gatsby on February (Edit 2021, not anymore). I though 2020 would be a good year, I would write more and have a healthier life. Well jump to October: I don't need to explain 2020 and I gained much more weight that I would like to admit. Oh no, anyway. This blog used to be just markdown files, parsed with Gatsby and served with Vercel. I decided maybe it is time to switch to some CMS. I am planning to add some portfolio here, so a CMS would make content management easier.

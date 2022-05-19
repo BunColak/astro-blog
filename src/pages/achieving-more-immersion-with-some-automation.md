@@ -2,6 +2,7 @@
 layout: ../layouts/PostLayout.astro
 tags: ["python","automation"]
 title: Achieving more immersion with some automation
+description: "I bought a game that I wanted to play for a long time: Red Dead Redemption 2 (RDR2)..."
 releaseDate: 2020-10-30
 ---
 Cyberpunk 2077 has been delayed. Again. I cannot spend too much time playing games lately, so I was holding my quota for playing a long game for Cyberpunk. Since it got delayed, I bought a game that I wanted to play for a long time: Red Dead Redemption 2 (RDR2). Playing on PC obviously. 

@@ -1,8 +1,11 @@
 ---
-const {title, description} = Astro.props
-const derivedDescription = description || "Personal website for Bün Colak. Development tips and personal opinions."
+    import '../styles/blog.css'
+    const { title, description } = Astro.props
+    const derivedDescription = description || "Personal website for Bün Colak. Development tips and personal opinions."
 ---
+
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
@@ -15,20 +18,17 @@ const derivedDescription = description || "Personal website for Bün Colak. Deve
     <meta name="language" content="English">
     <meta name="author" content="Bün Colak">
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content={title || "Bün Colak"} />
+    <meta name="twitter:title" content={title || "Bün Colak" } />
     <meta name="twitter:description" content={derivedDescription} />
     <meta name="twitter:image" content="/assets/profile.jpg" />
 
     <link rel="icon" type="image/x-icon" href="/favicon.png" />
-    <link
-        rel="stylesheet"
-        href={Astro.resolve("../styles/global.css")}
-    >
 </head>
-<body>
-<div class="relative min-h-screen transition-all dark:text-white dark:bg-gray-400">
-    <slot />
-</div>
-</body>
-</html>
 
+<body>
+    <div class="relative min-h-screen transition-all">
+        <slot />
+    </div>
+</body>
+
+</html>
