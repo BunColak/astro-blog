@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@astrojs/preact': ^0.1.2
+  '@astrojs/rss': ^0.2.0
   '@astrojs/svelte': ^0.1.3
   '@astrojs/tailwind': ^0.2.1
   '@babel/core': '>=7.10.2 <8.0.0'
@@ -15,6 +16,7 @@ specifiers:
   tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1 || insiders'
 
 dependencies:
+  '@astrojs/rss': 0.2.0
   '@babel/core': 7.17.12
   '@tailwindcss/typography': 0.5.2_tailwindcss@3.0.24
   autoprefixer: 10.4.7_postcss@8.4.14
@@ -106,6 +108,12 @@ packages:
     resolution: {integrity: sha512-JxkrXFiFhfunOFBI2Xxwru9t4IzrLw+nfA7RkNnV8qP65BLidrwWS+NfZhOSVGTrbf+cQfF8QNe6O4gAX8wQHw==}
     engines: {node: ^14.15.0 || >=16.0.0}
     dev: true
+
+  /@astrojs/rss/0.2.0:
+    resolution: {integrity: sha512-Y6e6nL8BN0swd2tvlY3xNu9VHx6IQz70NcKIiPzjKXcjiubJMx0TyfpYWGOtwHCtGvHiPV3rJa6U+cbkgy2HVQ==}
+    dependencies:
+      fast-xml-parser: 4.0.7
+    dev: false
 
   /@astrojs/svelte-language-integration/0.1.4_typescript@4.6.4:
     resolution: {integrity: sha512-rgi3g078uAxdb8jg1A5U8sNWMUQq7UXwHT7qmPiGOeB+h5p+tzUFy/Awq2suv99Tq8efpn3HrAGTuDvxyvbwfg==}
@@ -1478,7 +1486,6 @@ packages:
     hasBin: true
     dependencies:
       strnum: 1.0.5
-    dev: true
 
   /fastq/1.13.0:
     resolution: {integrity: sha512-YpkpUnK8od0o1hmeSc7UUs/eB/vIPWJYjKck2QKIzAf71Vm1AAQ3EbuZB3g2JIy+pg+ERD0vqI79KyZiB2e2Nw==}
@@ -3410,7 +3417,6 @@ packages:
 
   /strnum/1.0.5:
     resolution: {integrity: sha512-J8bbNyKKXl5qYcR36TIO8W3mVGVHrmmxsd5PAItGkmyzwJvybiw2IVq5nqd0i4LSNSkB/sx9VHllbfFdr9k1JA==}
-    dev: true
 
   /style-to-object/0.3.0:
     resolution: {integrity: sha512-CzFnRRXhzWIdItT3OmF8SQfWyahHhjq3HwcMNCNLn+N7klOOqPjMeG/4JSu77D7ypZdGvSzvkrbyeTMizz2VrA==}

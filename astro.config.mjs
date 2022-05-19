@@ -6,5 +6,6 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [preact(), svelte(), tailwind()]
+  integrations: [preact(), svelte(), tailwind()],
+  site: 'https://www.buncolak.com'
 });
