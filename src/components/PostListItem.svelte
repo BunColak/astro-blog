@@ -8,7 +8,7 @@
 </script>
 
 <div class="mt-10">
-  <a class="text-lg" href={`${url}`}>{title}</a>
+  <a class="text-lg font-bold" href={`${url}`}>{title}</a>
   <div class="flex mb-4 text-sm text-gray-600 lg:mb-2">
     <div>{DateTime.fromISO(releaseDate).toLocaleString(DateTime.DATE_MED)}</div>
     <div class="flex flex-wrap justify-start">

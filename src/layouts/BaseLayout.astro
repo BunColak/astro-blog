@@ -1,6 +1,6 @@
 ---
     import '../styles/blog.css'
-    const { title, description } = Astro.props
+    const { title, description, image } = Astro.props
     const derivedDescription = description || "Personal website for Bün Colak. Development tips and personal opinions."
 ---
 
@@ -20,7 +20,7 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content={title || "Bün Colak" } />
     <meta name="twitter:description" content={derivedDescription} />
-    <meta name="twitter:image" content="/assets/profile.jpg" />
+    <meta name="twitter:image" content={image || "/assets/profile.jpg"} />
 
     <link rel="icon" type="image/x-icon" href="/favicon.png" />
 </head>
