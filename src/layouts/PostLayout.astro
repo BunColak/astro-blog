@@ -1,7 +1,9 @@
 ---
   import { DateTime } from "luxon";
   import BaseBlogLayout from './BaseBlogLayout.astro'  
-  const { content: { releaseDate, description, tags, title, image, astro: { source } } } = Astro.props
+  const { content: { releaseDate, description, tags, title, image } } = Astro.props
+
+  const source = Astro.props.rawContent()
 ---
 
 <BaseBlogLayout title={title} description={description} image={image}>
