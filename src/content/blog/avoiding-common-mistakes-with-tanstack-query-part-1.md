@@ -1,7 +1,7 @@
 ---
 title: Avoiding Common Mistakes with TanStack Query Part 1
 description: TanStack Query is probably the most popular library for fetching data in React. It is simple and powerful. But there are some common mistakes I see people doing with it.
-pubDatetime: 2024-03-04 21:00:00
+pubDatetime: 2024-03-04 00:00:00
 tags: ["react", "tanstack-query", "javascript", "web-development", "frontend", "react-query", "mistakes", "common-mistakes", "tanstack"]
 ---
 
