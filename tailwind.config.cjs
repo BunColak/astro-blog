@@ -1,47 +1,75 @@
-const colors = require('tailwindcss/colors')
+function withOpacity(variableName) {
+  return ({ opacityValue }) => {
+    if (opacityValue !== undefined) {
+      return `rgba(var(${variableName}), ${opacityValue})`;
+    }
+    return `rgb(var(${variableName}))`;
+  };
+}
 
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-	mode: 'jit',
-	content: ['./public/**/*.html', './src/**/*.{astro,js,jsx,svelte,ts,tsx,vue}'],
-	theme: {
-		fontFamily: {
-			sans: ['Open Sans', 'sans-serif'],
-			serif: ['Source Sans Pro', 'sans-serif'],
-		},
-		extend: {
-			typography: {
-				DEFAULT: {
-					css: {
-						a: {
-							color: colors.indigo[600],
-							'&:hover': {
-								color: colors.indigo[700],
-							},
-						},
-						h1: {
-							color: colors.indigo[600]
-						},
-						h2: {
-							color: colors.indigo[600]
-						},
-						h3: {
-							color: colors.indigo[600]
-						},
-						h4: {
-							color: colors.indigo[600]
-						},
-						h5: {
-							color: colors.indigo[600]
-						},
-						h6: {
-							color: colors.indigo[600]
-						},
-					},
-				},
-			},
-		},
-	},
-	plugins: [
-		require('@tailwindcss/typography')
-	]
+  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  theme: {
+    // Remove the following screen breakpoint or add other breakpoints
+    // if one breakpoint is not enough for you
+    screens: {
+      sm: "640px",
+    },
+
+    extend: {
+      textColor: {
+        skin: {
+          base: withOpacity("--color-text-base"),
+          accent: withOpacity("--color-accent"),
+          inverted: withOpacity("--color-fill"),
+        },
+      },
+      backgroundColor: {
+        skin: {
+          fill: withOpacity("--color-fill"),
+          accent: withOpacity("--color-accent"),
+          inverted: withOpacity("--color-text-base"),
+          card: withOpacity("--color-card"),
+          "card-muted": withOpacity("--color-card-muted"),
+        },
+      },
+      outlineColor: {
+        skin: {
+          fill: withOpacity("--color-accent"),
+        },
+      },
+      borderColor: {
+        skin: {
+          line: withOpacity("--color-border"),
+          fill: withOpacity("--color-text-base"),
+          accent: withOpacity("--color-accent"),
+        },
+      },
+      fill: {
+        skin: {
+          base: withOpacity("--color-text-base"),
+          accent: withOpacity("--color-accent"),
+        },
+        transparent: "transparent",
+      },
+      fontFamily: {
+        mono: ["IBM Plex Mono", "monospace"],
+      },
+
+      typography: {
+        DEFAULT: {
+          css: {
+            pre: {
+              color: false,
+            },
+            code: {
+              color: false,
+            },
+          },
+        },
+      },
+    },
+  },
+  plugins: [require("@tailwindcss/typography")],
 };
